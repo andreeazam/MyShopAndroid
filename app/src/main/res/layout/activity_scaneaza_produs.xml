@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_scaneaza_produs"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.myshop.andreea.myshop.ScaneazaProdusActivity">
+
+    <TextView
+        android:text="CantitateInStoc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:id="@+id/txtCantitateInStoc"
+        android:layout_below="@+id/etDenumireProdus"
+        android:layout_alignLeft="@+id/etDenumireProdus" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/etCantitateComandata"
+        android:layout_alignBottom="@+id/etCantitateInStoc"
+        android:layout_below="@+id/txtCantitateComandata"
+        android:layout_toRightOf="@+id/etCantitateInStoc" />
+
+    <TextView
+        android:text="Cantitate Comandata"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtCantitateComandata"
+        android:layout_above="@+id/etCantitateInStoc"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@+id/etCantitateInStoc" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="Name"
+        android:ems="10"
+        android:id="@+id/etDenumireProdus"
+        android:layout_marginTop="13dp"
+        android:layout_below="@+id/txtDenumireProdus"
+        android:layout_alignParentLeft="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text=""
+        android:ems="10"
+        android:id="@+id/etCantitateInStoc"
+        android:editable="false"
+        android:layout_below="@+id/txtCantitateInStoc"
+        android:layout_alignParentLeft="true" />
+
+    <TextView
+        android:text="Denumire Produs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="27dp"
+        android:id="@+id/txtDenumireProdus"
+        android:layout_below="@+id/etIdProdus"
+        android:layout_alignParentLeft="true" />
+
+    <TextView
+        android:text="Numar Comanda : "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtNumarComanda"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true" />
+
+    <Button
+        android:text="Cauta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnCauta"
+        android:layout_alignBottom="@+id/etIdProdus"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/etIdProdus"
+        android:textColor="@color/colorPrimary"
+        android:background="@color/colorPrimaryDark"
+        />
+
+    <TextView
+        android:text="Pret"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtPretProdus"
+        android:layout_alignBaseline="@+id/txtDenumireProdus"
+        android:layout_alignBottom="@+id/txtDenumireProdus"
+        android:layout_alignParentRight="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:layout_alignTop="@+id/etDenumireProdus"
+        android:layout_alignParentRight="true"
+        android:id="@+id/etPretProdus"
+        android:layout_alignLeft="@+id/btnCauta" />
+
+    <TextView
+        android:text="xxxxx"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtNrComanda"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/etIdProdus"
+        android:layout_below="@+id/txtCodProdus"
+        android:layout_alignParentLeft="true" />
+
+    <TextView
+        android:text="Cod Produs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtCodProdus"
+        android:layout_marginTop="19dp"
+        android:layout_below="@+id/txtNumarComanda"
+        android:layout_alignParentLeft="true" />
+
+    <Button
+        android:text="Scaneaza produs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnScaneazaAltProdus"
+        android:textColor="@color/colorPrimary"
+        android:background="@color/colorPrimaryDark"
+        android:layout_below="@+id/btnAdaugaInCos"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="32dp"
+        android:layout_alignParentRight="true" />
+
+    <Button
+        android:text="Adauga In Cos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:id="@+id/btnAdaugaInCos"
+        android:textColor="@color/colorPrimary"
+        android:background="@color/colorPrimaryDark"
+        android:layout_below="@+id/etCantitateComandata"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true" />
+
+</RelativeLayout>

@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">MyShop</string>
+    <string name="title_activity_cos_comanda">CosComanda</string>
+    <string name="title_activity_confirmare_primire">ConfirmarePrimire</string>
+</resources>

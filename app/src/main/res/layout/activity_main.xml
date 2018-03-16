@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.myshop.andreea.myshop.LoginActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:text="Username"
+        android:layout_margin ="20dp"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:id="@+id/etUsername"
+        android:layout_marginBottom="10dp"
+        android:layout_width="332dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:text="Parola"
+        android:layout_margin ="20dp"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:id="@+id/etParola"
+        android:inputType="textPassword"
+        android:layout_marginBottom="10dp"
+        android:layout_width="323dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        />
+
+    <Button
+        android:id="@+id/bLogin"
+        android:text="Login"
+        android:layout_margin ="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorPrimary"
+        android:background="@color/colorPrimaryDark"
+        />
+
+
+    <TextView
+        android:id="@+id/tvInregistrareLink"
+        android:layout_width="wrap_content"
+        android:text="Inregistrare"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

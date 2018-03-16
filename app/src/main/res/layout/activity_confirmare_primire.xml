@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_confirmare_primire"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.myshop.andreea.myshop.ConfirmarePrimireActivity">
+
+    <TextView
+        android:text="0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tvComanda"
+        android:layout_toRightOf="@+id/tvComanda"
+        android:layout_marginLeft="61dp"
+        android:id="@+id/tvNumarComanda"
+        android:textColorLink="@android:color/black"
+        android:textColorHighlight="@color/common_google_signin_btn_text_dark_focused"
+        android:textStyle="normal|bold"
+        android:textSize="30sp" />
+
+    <TextView
+        android:text="0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tvValoare"
+        android:layout_alignLeft="@+id/tvNumarComanda"
+        android:id="@+id/tvSumaValoare"
+        android:textStyle="normal|bold"
+        android:textSize="30sp" />
+
+    <TextView
+        android:text="Status :"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="89dp"
+        android:id="@+id/tvStatus"
+        android:textSize="25sp"
+        android:textStyle="normal|bold"
+        android:layout_below="@+id/tvComanda"
+        android:layout_alignLeft="@+id/tvComanda"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused" />
+
+    <TextView
+        android:text="Valoare :"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="71dp"
+        android:id="@+id/tvValoare"
+        android:textSize="30sp"
+        android:textStyle="normal|bold"
+        android:layout_below="@+id/tvStatus"
+        android:layout_alignLeft="@+id/tvStatus"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused" />
+
+    <TextView
+        android:text="Comanda: "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="34dp"
+        android:layout_marginTop="98dp"
+        android:id="@+id/tvComanda"
+        android:textSize="30sp"
+        android:textColorLink="?attr/actionMenuTextColor"
+        android:clickable="false"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+        android:textStyle="normal|bold"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true" />
+
+    <TextView
+        android:text="textStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvTextStatus"
+        android:textSize="14sp"
+        android:layout_above="@+id/tvValoare"
+        android:layout_toRightOf="@+id/tvComanda" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/bDetaliiComanda"
+        android:text="Detalii Comanda"
+        android:textColor="@color/colorPrimary"
+        android:background="@color/colorPrimaryDark"
+        android:layout_above="@+id/bComenzileMele"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="23dp"
+        android:layout_alignParentRight="true" />
+
+    <Button
+        android:text="Confirma Primire"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/bConfirmaPrimire"
+        android:textColor="@color/colorPrimary"
+        android:background="@color/colorPrimaryDark"
+        android:layout_marginBottom="16dp"
+        android:layout_above="@+id/bDetaliiComanda"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true" />
+
+    <Button
+        android:text="Comenzile Mele"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/bComenzileMele"
+        android:layout_marginBottom="30dp"
+        android:textColor="@color/colorPrimary"
+        android:background="@color/colorPrimaryDark"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true" />
+</RelativeLayout>
